@@ -32,4 +32,56 @@ add_theme_support('html5',array('comment-list', 'comment-form', 'gallery', 'capt
 add_theme_support('title-tag');
 
 add_action('after_setup_theme', 'config', 0);
+
+function wpdevs_sidebars(){
+    register_sidebars(
+        array(
+            'name' => 'Blog Sidebar',
+            'id' => 'sidebar-blog',
+            'description' => 'This is the bLOG sIDEBAR you can add your widgets here.',
+            'before_widget' => '<div class="widget">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+
+    );
+
+     register_sidebars(
+        array(
+            'name' => 'Service 1',
+            'id' => 'services-1',
+            'description' => 'First service area',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+
+    );
+
+     register_sidebars(
+        array(
+            'name' => 'Service 2',
+            'id' => 'services-2',
+            'description' => 'Second service area',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+
+    );
+
+    register_sidebars(
+        array(
+            'name' => 'Service 2',
+            'id' => 'services-2',
+            'description' => 'Second service area',
+            'before_widget' => '<div class="widget-wrapper">',
+            'after_widget' => '</div>',
+            'before_title' => '<h4 class="widget-title">',
+            'after_title' => '</h4>'
+        )
+}
 ?>
