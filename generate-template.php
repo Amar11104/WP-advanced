@@ -36,3 +36,5 @@ Template Name: General Template
     </main>
 
 </div>
+
+<?php get_footer(); ?>
