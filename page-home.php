@@ -1,5 +1,35 @@
 <?php get_header(); ?>
 
+<div id="content">
+    <div id="inner_container">
+        <div class="img_container">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg">
+        </div>
+
+        <div class="img_container">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/5.avif">
+        </div> 
+        <div class="img_container">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/r.avif">
+        </div>
+
+        <div id="overlay">
+            <div id="left_buton" class="overlay_button" onclick="onLeftButton()"></div>
+            <div id="right_buton" class="overlay_button" onclick="onRighttButton()"></div>
+        </div>
+    </div>
+</div>
+
+        <div style="text-align: center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+
+        </div>
+
+
+
+
 <div id="content" class="site-content">
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
