@@ -15,11 +15,8 @@ Text Domain: twentytwenty
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-h1 {
-    color: red;
-}
 
- html {
+html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
   }
@@ -46,7 +43,8 @@ h1 {
     height: 0; /* 1 */
     overflow: visible; /* 2 */
   }
-
+  
+  
   pre {
     font-family: monospace, monospace; /* 1 */
     font-size: 1em; /* 2 */
@@ -58,9 +56,7 @@ h1 {
   a {
     background-color: transparent;
   }
-  
- 
-  
+
   abbr[title] {
     border-bottom: none; /* 1 */
     text-decoration: underline; /* 2 */
@@ -90,272 +86,12 @@ h1 {
     font-size: 80%;
   }
 
-sub,
+
+  
+  sub,
   sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
   }
-  
-  sub {
-    bottom: -0.25em;
-  }
-  
-  sup {
-    top: -0.5em;
-  }
-  
-  
-  
-  img {
-    border-style: none;
-  }
-
-
-  
-  button,
-  input,
-  optgroup,
-  select,
-  textarea {
-    font-family: inherit; /* 1 */
-    font-size: 100%; /* 1 */
-    line-height: 1.15; /* 1 */
-    margin: 0; /* 2 */
-  }
-  
- 
-  
-  button,
-  input { /* 1 */
-    overflow: visible;
-  }
-  
-  
-  button,
-  select { /* 1 */
-    text-transform: none;
-  }
-  
-  button,
-  [type="button"],
-  [type="reset"],
-  [type="submit"] {
-    -webkit-appearance: button;
-  }
-  
-  
-  
-  button::-moz-focus-inner,
-  [type="button"]::-moz-focus-inner,
-  [type="reset"]::-moz-focus-inner,
-  [type="submit"]::-moz-focus-inner {
-    border-style: none;
-    padding: 0;
-  }
-  
-  
-  
-  button:-moz-focusring,
-  [type="button"]:-moz-focusring,
-  [type="reset"]:-moz-focusring,
-  [type="submit"]:-moz-focusring {
-    outline: 1px dotted ButtonText;
-  }
-  
-  
-  
-  fieldset {
-    padding: 0.35em 0.75em 0.625em;
-  }
-  
-  
-  
-  legend {
-    box-sizing: border-box; /* 1 */
-    color: inherit; /* 2 */
-    display: table; /* 1 */
-    max-width: 100%; /* 1 */
-    padding: 0; /* 3 */
-    white-space: normal; /* 1 */
-  }
-
-progress {
-    vertical-align: baseline;
-  }
-  
-  
-  
-  textarea {
-    overflow: auto;
-  }
-  
- 
-  
-  [type="checkbox"],
-  [type="radio"] {
-    box-sizing: border-box; /* 1 */
-    padding: 0; /* 2 */
-  }
-  
-  
-  
-  [type="number"]::-webkit-inner-spin-button,
-  [type="number"]::-webkit-outer-spin-button {
-    height: auto;
-  }
-  
- 
-  
-  [type="search"] {
-    -webkit-appearance: textfield; /* 1 */
-    outline-offset: -2px; /* 2 */
-  }
-  
-  
-  
-  [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
-  }
-  
- 
-  
-  ::-webkit-file-upload-button {
-    -webkit-appearance: button; /* 1 */
-    font: inherit; /* 2 */
-  }
-  
-    
-  details {
-    display: block;
-  }
-  
- 
-  
-  summary {
-    display: list-item;
-  }
-
-
-  
-  template {
-    display: none;
-  }
-  
- 
-  
-  [hidden] {
-    display: none;
-  }
-
-
-
-
-
-:root{
-    /* Measurements */
-    --wp-big-padding: 60px 0;
-    --wp-mobile-padding: 20px 0;
-    /* --wp-light-padding: 0 25px; */
-    /* Colors */
-    --wp-gray1: #7C7C7C;
-    --wp-gray2: #F7F7F7;
-    --wp-gray3: #DDDDDD;
-    --wp-light-blue: #4c40b7;
-    --wp-deep-gray: #a0a0a0;
-    --wp-deep-black: black;
-    --wp-black-blue: #3c36a3;
-    --wp-yellow: #8f823e;
-}
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    font: normal, 21px/2.1rem, 'Poppins', sans-serif;
-}
-h1{
-    font-size: 66px;
-    line-height: 70px;
-}
-h2{
-    font-size: 40px;
-    line-height: 4.0rem;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-h3{
-    font-size: 36px;
-    line-height: 3.6rem;
-    font-weight: bold;
-}
-h4{
-    font-size: 28px;
-    line-height: 2.8rem;
-    font-weight: bold;
-}
-h5{
-    font-size: 22px;
-    line-height: 2.2rem;
-    font-weight: bold;
-}
-p{
-    font-size: 15px;
-    line-height: 1.7rem;
-}
-a{
-    color: var( --wp-gray1 );
-    text-decoration: none;
-}
-
-a:hover,
-a:visited{
-    color: #2e0974;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-
-/* Containers */
-
-
-.container {
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-@media (max-width: 575px) {
-    .container {
-        padding: var(--wp-light-padding);
-    }
-}
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        max-width: 960px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1140px;
-    }
-}
