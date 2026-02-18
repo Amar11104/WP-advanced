@@ -83,5 +83,6 @@ function wpdevs_sidebars(){
             'before_title' => '<h4 class="widget-title">',
             'after_title' => '</h4>'
         )
-}
+        );
+};
 ?>

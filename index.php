@@ -13,7 +13,7 @@
                     ?>
                     <div class="wpdevs-pagination">
                         <div class="pages new">
-                            <?php previous posts_link("<< Newer posts"); ?>
+                            <?php previous_posts_link("<< Newer posts"); ?>
                         <div class="pages old">
                             <?php previous_posts_link(">> Older posts"); ?>
                         </div>

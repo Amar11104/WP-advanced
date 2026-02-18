@@ -28,3 +28,5 @@ if(!is_page('landing-page')):?>
         </nav>
 </div>
 </section>
+
+<?php endif; ?>
